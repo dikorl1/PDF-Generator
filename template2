@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чек / Счёт</title>
+    <style>
+        body { margin: 0; padding: 24px; background: #f0f2f5; color: #1a1a2e; min-height: 100vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .card { max-width: 560px; margin: 0 auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); overflow: hidden; border-left: 4px solid #2d5a27; }
+        .card-header { background: #2d5a27; color: #fff; padding: 28px 32px; }
+        .card-header h1 { margin: 0; font-size: 1.75em; font-weight: 600; letter-spacing: -0.02em; }
+        .card-header .sub { margin-top: 6px; opacity: 0.9; font-size: 0.95em; }
+        .card-body { padding: 28px 32px; }
+        .row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #e8eaed; }
+        .row:last-of-type { border-bottom: none; }
+        .label { color: #5f6368; font-size: 0.9em; }
+        .value { font-weight: 500; color: #1a1a2e; }
+        .row.total .label { color: #2d5a27; font-weight: 600; font-size: 1em; }
+        .row.total .value { font-size: 1.15em; color: #2d5a27; font-weight: 700; }
+        .footer { padding: 16px 32px; background: #f8f9fa; font-size: 0.8em; color: #80868b; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h1>Чек по сделке</h1>
+            <p class="sub">Детализация</p>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <span class="label">Название компании</span>
+                <span class="value">{company}</span>
+            </div>
+            <div class="row">
+                <span class="label">Дата</span>
+                <span class="value">{date}</span>
+            </div>
+            <div class="row">
+                <span class="label">Цена (за ед.)</span>
+                <span class="value">{price} руб.</span>
+            </div>
+            <div class="row">
+                <span class="label">Количество</span>
+                <span class="value">{quantity} ед.</span>
+            </div>
+            <div class="row total">
+                <span class="label">Сумма</span>
+                <span class="value">{total} руб.</span>
+            </div>
+        </div>
+        <div class="footer">Документ сформирован автоматически</div>
+    </div>
+</body>
+</html>
