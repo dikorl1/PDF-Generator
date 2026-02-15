@@ -13,6 +13,10 @@ CLI-меню: выбор CSV/JSON + шаблона + записи
 Автооткрытие PDF в браузере
 
 Тестовый CSV с 5 компаниями
+Образцы чеков:
+[invoice_2.pdf](https://github.com/user-attachments/files/25325073/invoice_2.pdf)
+[invoice_4.pdf](https://github.com/user-attachments/files/25325072/invoice_4.pdf)
+
 
 🚀 Быстрый старт:
 
